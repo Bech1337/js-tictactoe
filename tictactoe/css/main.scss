@@ -1,0 +1,42 @@
+* {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+  .game {
+    text-align: center;
+    .title {
+      font-size: 22px;
+    }
+    .restart-btn {
+      width: 5em;
+      height: 2em;
+    }
+    .turn {
+      margin-top: 12px;
+    }
+  }
+
+  .grid {
+    justify-content: center;
+    margin: calc((100vh - (12rem * 4)) / 2) 0;
+    display: grid;
+    direction: row;
+    .row {
+      display: flex;
+      div {
+        display: flex;
+        width: 12rem;
+        height: 12rem;
+        border: 1px solid #888888;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+}
